@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>denglu</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/foot.css">
+    <link rel="stylesheet" href="css/denglu.css">
+</head>
+<body>
+<div class="bg">
+    <img src="img/bg.jpg" alt="">
+    <div class="zhuce">
+        <p class="title"><a href=""></a><i></i><span>欢迎登录</span></p>
+        <div class="content">
+            <form action="" class="formdl">
+            <p class="p_head">用户登录</p>
+            <p class="p_title"><span><b>*</b> 用户名:</span> <input name="lname" class="input1" type="text"><i></i></p>
+            <p class="p_title"><span><b>*</b> 请输入密码:</span> <input name="lpassword" class="input2" type="password"><i class="pw1"></i></p>
+            <p class="p_title"><span><b>*</b> 验证码:</span> <input type="text" class="xiaoyan">
+                <button class="bt">验证码</button>
+                <a  class="chang"href=""> 换一张</a>
+            </p>
+            <p class="p_foot"><em class="em"></em>  阅读并同意 <span>服务协议</span>
+                <a class="p_login" href="注册.html" target="_blank">注册</a><i></i><a href="">找回密码</a>
+            </p>
+            <p class="p_foot"><input type="button" class="sub" value="登 录">
+            </p>
+                <p class="hezuo">. . . . . .  . . . . .  使用合作账号 . . . . .   . . . . . . . . . . . .</p>
+            <div class="zhuce_foot">
+                <a class="qq" href=""></a>
+                <a class="wb" href=""></a>
+                <a class="wx" href=""></a>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="foot">
+    <div class="foot_bottom">
+        <div class="bottom_left">
+
+            <ul class="f-clear">
+                <li> 友情链接：</li>
+                <li><a href="">武汉租房</a></li>
+                <li><a href="">厨房电器品牌</a></li>
+                <li><a href="">房汇网</a></li>
+                <li><a href="">360搜房网</a></li>
+                <li><a href="">无锡二手车</a></li>
+                <li><a href="">合肥房产网</a></li>
+                <li><a href="">房产论坛</a></li>
+                <li><a href="">租房问答</a></li>
+                <li><a href="">郑州租房</a></li>
+                <li><a href="">郑州房价</a></li>
+                <li><a href="">好租</a></li>
+                <li><a href="">郑州租房</a></li>
+                <br>
+                <li><a href="">南山写字楼</a></li>
+                <li><a href="">罗湖写字楼</a></li>
+                <li><a href="">上海写字楼出租</a></li>
+                <li><a href="">北京写字楼出租</a></li>
+                <li><a href="">深圳写字楼出租做</a></li>
+                <li><a href="">房产季</a></li>
+                <li><a href="">好租</a></li>
+            </ul>
+            <hr class="line">
+            <div class="copy">北京易居房产经纪有限公司<i></i>网络经营许可证 京ICP备11024601号-12</div>
+            <p>©Copyright©2010-2016易居yiju.com版权所有</p>
+        </div>
+        <div class="bottom_right">
+            <img src="img/code.png" alt="">
+            <p class="sao">微信扫一扫 马上租房</p>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.8.0.js"></script>
+<script>
+    var off={},ss=true ;
+    $('.p_title input').focus(function(){
+        $(this).css({borderColor:'#70ad46'})
+    }).blur();
+    $('input[name="lname"]').blur(function(){
+        val=$(this).val();
+        if(/[0-9a-zA-Z]{6,20}/.test(val)){
+            $(this).css({borderColor:'#70ad46'})
+            off[this.className]=true;
+        }else{
+            $(this).css({borderColor:'red'})
+            off[this.className]=false;
+        }
+    });
+
+    $('input[name="lpassword"]').blur(function(){
+        val=$(this).val();
+        if(/[0-9a-zA-Z]{6,20}/.test(val)){
+            $(this).css({borderColor:'#70ad46'})
+            off[this.className]=true;
+        }else{
+            $(this).css({borderColor:'red'})
+            off[this.className]=false;
+        }
+    });
+// 是否勾选协议
+    $('.p_foot em').click(function(){
+        $(this).toggleClass('em')
+    });
+
+
+    $('.sub').click(function(){
+        $('.p_title input').blur();//这句话的作用是下面注释的那个数组的作用一样
+        var  j=0;
+        for(var i in off){
+            if(!off[i]){
+                ss=false
+            }
+            j++
+        }
+
+        if( $('.p_foot .em').attr('class')){
+
+          /*  var arr=[];
+            for(var k= 0;k<2;k++){
+                arr[arr.length]=$('.content input').eq(k).val()
+            }
+            for(var x in arr){
+                if(arr[x]==''){
+                    $('.content input').eq(x).css({borderColor:'red'})
+                }
+            }*/
+
+            if(j==2&&ss==true){
+              $.ajax({
+                    type:'post',
+                    url:'http://www.zhijunxing.com/yiju/landlordLogin.action',
+                    dataType:'jsonp',
+                    data:$('.formdl').serialize(),
+                    success : function (response) {
+                        console.log(response);
+                        if (response.resultCode=='0000'){
+                           location.href='http://192.168.0.167/易居网初稿/首页.html'
+
+                        }else{
+                            alert('账号或密码不正确')
+                        }
+                    }
+                });
+
+            }else{
+                alert('请把信息输入完整');
+            }
+        }
+        else{
+           alert('请勾选阅读协议');
+        }
+
+    })
+
+</script>
+</body>
+</html>

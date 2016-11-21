@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>zhuce</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/foot.css">
+    <link rel="stylesheet" href="css/zhuce.css">
+</head>
+<body>
+<div class="bg">
+    <img src="img/bg.jpg" alt="">
+    <div class="zhuce">
+        <p class="title"><a href=""></a><i></i><span>欢迎注册</span></p>
+        <div class="content">
+            <form action="" class="formzc">
+            <p class="p_head">新用户注册</p>
+            <p class="p_title"><span><b>*</b> 用户名:</span> <input class="input1" type="text" name="lname" ><i></i></p>
+            <p class="p_title"><span><b>*</b> 请设置密码:</span> <input  class="input2" name="lpassword" type="password"><i class="pw1"></i></p>
+            <p class="p_title"><span><b>*</b> 请确认密码:</span> <input  class="input3" name="nextpassword" type="password"><i class="pw2"></i></p>
+            <p class="p_title"><span><b>*</b> 邮箱:</span> <input  class="input4" name="lemail" type="text"><i class="mail"></i></p>
+            <p class="p_title"><span><b>*</b> 手机号:</span> <input  class="input5" name="lphone" type="text"><i class="phone"></i></p>
+            <p class="p_title"><span><b>*</b> 验证码:</span> <input type="text" class="xiaoyan">
+                <button class="bt">验证码</button>
+                <a  class="chang"href=""> 换一张</a>
+            </p>
+            <p class="p_foot"><em class="em"></em> 阅读并同意 <span>服务协议</span>
+                <a class="p_login" href="登录.html" target="_blank">登录</a><i></i><a href="">找回密码</a>
+            </p>
+            </form>
+
+            <p class="p_foot"><input type="button" class="sub" value="注 册">
+            </p>
+        </div>
+
+
+    </div>
+</div>
+<div id="mask"></div>
+<div class="popupBox">
+    <i class="ok"></i><span>恭喜您注册成功！</span>
+    <!--<a href="http://192.168.0.175/yiju/01/login.html">马上登录>></a>-->
+    <a href="###">马上登录>></a>
+    <i class="close"></i>
+</div>
+
+<div class="foot">
+    <div class="foot_bottom">
+        <div class="bottom_left">
+
+            <ul class="f-clear">
+                <li> 友情链接：</li>
+                <li><a href="">武汉租房</a></li>
+                <li><a href="">厨房电器品牌</a></li>
+                <li><a href="">房汇网</a></li>
+                <li><a href="">360搜房网</a></li>
+                <li><a href="">无锡二手车</a></li>
+                <li><a href="">合肥房产网</a></li>
+                <li><a href="">房产论坛</a></li>
+                <li><a href="">租房问答</a></li>
+                <li><a href="">郑州租房</a></li>
+                <li><a href="">郑州房价</a></li>
+                <li><a href="">好租</a></li>
+                <li><a href="">郑州租房</a></li>
+                <br>
+                <li><a href="">南山写字楼</a></li>
+                <li><a href="">罗湖写字楼</a></li>
+                <li><a href="">上海写字楼出租</a></li>
+                <li><a href="">北京写字楼出租</a></li>
+                <li><a href="">深圳写字楼出租做</a></li>
+                <li><a href="">房产季</a></li>
+                <li><a href="">好租</a></li>
+            </ul>
+            <hr class="line">
+            <div class="copy">北京易居房产经纪有限公司<i></i>网络经营许可证 京ICP备11024601号-12</div>
+            <p>©Copyright©2010-2016易居yiju.com版权所有</p>
+        </div>
+        <div class="bottom_right">
+            <img src="img/code.png" alt="">
+            <p class="sao">微信扫一扫 马上租房</p>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.8.0.js"></script>
+<script>
+    var off={};
+    $('.p_title input').focus(function(){
+        $(this).css({borderColor:'#70ad46'})
+    })
+
+    $('input[name="lname"]').blur(function(){
+        val=$(this).val();
+        if(/[0-9a-zA-Z]{6,20}/.test(val)){
+            $(this).css({borderColor:'#70ad46'})
+            off[this.className]=true;
+        }else{
+            $(this).css({borderColor:'red'})
+            off[this.className]=false;
+        }
+        ///console.log(off);
+    });
+
+    $('input[name="lpassword"]').blur(function(){
+        val=$(this).val();
+        if(/[0-9a-zA-Z]{6,20}/.test(val)){
+            $(this).css({borderColor:'#70ad46'})
+            off[this.className]=true;
+        }else{
+            $(this).css({borderColor:'red'})
+            off[this.className]=false;
+        }
+    });
+
+    $('input[name="nextpassword"]').blur(function(){
+        val=$(this).val();
+        if(val===$('input[name="lpassword"]').val()){
+            $(this).css({borderColor:'#70ad46'})
+            off[this.className]=true;
+        }else{
+            $(this).css({borderColor:'red'})
+            off[this.className]=false;
+           alert('两次输入的密码不同')
+        }
+    });
+    $('input[name="lemail"]').blur(function(){
+        val=$(this).val();
+        if(/[0-9a-zA-Z]{6,20}@[0-9a-zA-Z]{3,6}\.[0-9a-z]{3,6}/.test(val)){
+            $(this).css({borderColor:'#70ad46'})
+           off[this.className]=true;
+        }else{
+            $(this).css({borderColor:'red'})
+          off[this.className]=false;
+        }
+    });
+    $('input[name="lphone"]').blur(function(){
+        val=$(this).val();
+        if(/^[1][0-9]{10}$/.test(val)){
+            $(this).css({borderColor:'#70ad46'})
+            off[this.className]=true;
+        }else{
+            $(this).css({borderColor:'red'})
+            off[this.className]=false;
+        }
+    });
+    $('.p_foot em').click(function(){
+        $(this).toggleClass('em')
+    });
+
+
+    $('.sub').click(function(){
+        $('.p_title input').blur();  //这一句和下面注释的内容的效果是一样的
+    var ss=true;
+    var j=0;
+    for(var i in off){
+        if(!off[i]){
+            ss=false  }
+        j++  }
+    if( $('.p_foot .em').attr('class')){
+       /* var arr=[];
+        for(var k= 0;k<5;k++){
+            arr[arr.length]=$('.content input').eq(k).val()
+        }
+        for(var x in arr){
+            if(arr[x]==''){
+                $('.content input').eq(x).css({borderColor:'red'})
+            }
+        }*/
+        if(j==5&&ss==true){
+            $.ajax({
+                type:'post',
+                url:'http://www.zhijunxing.com/yiju/saveLandlord.action',
+                dataType:'jsonp',
+                data:$('.formzc').serialize(),
+                success : function (data) {
+                    console.log(data);
+                    if(data.resultCode=='0000'){
+
+                        $('.popupBox').show();
+                        $('#mask').show();
+                        $('.close').click(function () {
+                            $('.popupBox').hide();
+                            $('#mask').hide();
+                        });
+                        $('.popupBox a').click(function(){
+                            $.ajax({
+                                type: 'post',
+                                url: 'http://www.zhijunxing.com/yiju/landlordLogin.action',
+                                dataType: 'jsonp',
+                                data: {
+                                    lname:$('form input[name=lname]').val(),
+                                    lpassword:$('form input[name=lpassword]').val()
+                                },
+                                success: function (data) {
+                                    if (data.resultCode == 0000) {
+                                        location.href = 'http://192.168.0.167/易居网初稿/首页.html'
+                                    }
+                                }
+                            })
+                        })
+
+                   }
+                }
+            });
+        }else{
+            alert('请把信息输入完整')
+        }
+    }
+else{
+        alert ('请勾选阅读协议');
+    }
+});
+
+
+
+
+
+/*$('#dis i').click(function(){
+    $('#dis').hide();
+    location.href='首页.html'
+});*/
+</script>
+</body>
+</html>

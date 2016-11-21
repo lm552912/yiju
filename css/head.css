@@ -1,0 +1,107 @@
+.nav{
+    width:100%;
+    min-width: 1250px;
+    background: #75a749;
+}
+
+.nav_head{
+    width: 1150px;
+    margin: 0 auto;
+    height:58px;
+    overflow: hidden;
+}
+.nav_head #logo{
+    height:40px;
+    width: 144px;
+    display: inline-block;
+    position: relative;
+    top: -8px;
+    background: url("../img/logo.png") no-repeat;
+}
+.nav_search{
+    display: inline-block;
+    background: white;
+    border-radius: 10px;
+    height: 38px;
+    width: 646px;
+   margin: 10px 92px;
+
+    position: relative;
+}
+.nav_search span{
+    position: absolute;
+    top:10px;
+    left:20px;
+}
+.xl{
+    display:block;
+    height: 0px;
+    width:0px;
+    border-left:6px solid rgba(120,120,120,0);
+    border-right:6px solid rgba(120,120,120,0);
+    border-top:6px solid darkgray;
+    position: absolute;
+    top: 18px;
+    left: 52px;
+}
+.fg{
+    display:inline-block;
+    height: 30px;
+    width: 1px;
+    background: #cccccc;
+    position: absolute;
+    top: 5px;
+    left:76px;
+}
+.nav_search input{
+    position: absolute;
+    height: 36px;
+    width: 429px;
+    border: none;
+    top: 0px;
+    left: 90px;
+}
+.sousuo{
+    display: inline-block;
+    height:38px;
+    width: 125px;
+    position: absolute;
+    right:0;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    background: #597e38;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+.sousuo b{
+    display: inline-block;
+    height: 26px;
+    width: 26px;
+    background: url("../img/011.png") -338px -7px;
+    position: relative;
+    top: 2px;
+    left: 4px;
+}
+.sousuo i{
+    position: relative;
+    top: -6px;
+    left: 7px;
+}
+.nav_login{
+    margin-top: 18px;
+    float: right;
+}
+.nav_login a{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+}
+.nav_login i{
+    height: 13px;
+    width: 1px;
+    background: white;
+    display: inline-block;
+    vertical-align: -2px;
+}

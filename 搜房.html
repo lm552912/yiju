@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>search house</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/foot.css">
+    <link rel="stylesheet" href="css/searchhouse.css">
+</head>
+<body>
+<div class="nav">
+    <div class="nav_head">
+        <a href="http://192.168.0.167/易居网初稿/首页.html" id="logo"></a>
+        <div class="nav_search">
+            <span>郑州</span>
+            <i class="xl"></i>
+            <i class="fg"></i>
+            <input type="text">
+            <button class="sousuo">
+                <b></b>
+                <i>搜房源</i>
+            </button>
+        </div>
+        <div class="nav_login login">
+            <a href="##">登录</a>
+            <i></i>
+            <a href="##">注册</a>
+        </div>
+    </div>
+</div>
+<div class="box">
+    <div class="select">
+        <ul id="region">
+             <li>区域：</li>
+            <li class="li_color">全部</li>
+            <li><a href="###">金水</a></li>
+            <li><a href="###">中牟</a></li>
+            <li><a href="###">惠济</a></li>
+            <li><a href="###">经济开发区</a></li>
+            <li><a href="###">周边县市</a></li>
+            <li><a href="###">高新</a></li>
+            <li><a href="###">郑东</a></li>
+            <li><a href="###">二七</a></li>
+            <li><a href="###">中原</a></li>
+            <li><a href="###">管城</a></li>
+        </ul>
+        <ul id="price">
+            <li >租金：</li>
+            <li class="li_color">全部</li>
+            <li><a href="###">500以下</a></li>
+            <li><a href="###">500-800元</a></li>
+            <li><a href="###">800-1000元</a></li>
+            <li><a href="###">1000-1500元</a></li>
+            <li><a href="###">1500-2000元</a></li>
+            <li><a href="###">2000-3000元</a></li>
+            <li><a href="###">3000-5000元</a></li>
+            <li><a href="###">5000以上</a></li>
+        </ul>
+        <ul id="shi">
+            <li >房型：</li>
+            <li class="li_color">全部</li>
+            <li><a ah="1" href="###">一室</a></li>
+            <li><a ah="2" href="###">两室</a></li>
+            <li><a ah="3" href="###">三室</a></li>
+            <li><a ah="4" href="###">四室</a></li>
+            <li><a ah="5" href="###">五室及以上</a></li>
+        </ul>
+        <ul class="ul_last">
+            <li>筛选：</li>
+            <li>
+                <div class="zhuangxiu" id="house-style">
+                    <i>房屋类型</i>
+                    <span ></span>
+                    <ul class="ul_none" id="ul_1" style="display: none" >
+                        <li class="current-color">全部</li>
+                        <li><a href="###">1室1厅</a></li>
+                        <li><a href="###">2室1厅</a></li>
+                        <li><a href="###">2室2厅</a></li>
+                        <li><a href="###">3室2厅</a></li>
+                    </ul>
+
+                </div>
+            </li>
+            <li>
+                <div class="zhuangxiu" id="zhuangxiu">
+                    <i>装修</i>
+                    <span ></span>
+                    <ul class="ul_none" id="ul_2" style="display: none">
+                        <li class="current-color">全部</li>
+                        <li><a href="###">精装修</a></li>
+                        <li><a href="###">简装</a></li>
+                        <li><a href="###">毛坯</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><input class="check1" type="checkbox">&nbsp;&nbsp;&nbsp;地铁房</li>
+            <li><input  class="check2" type="checkbox">阳台</li>
+        </ul>
+    </div>
+</div>
+<div class="select_line">
+        <ul class="f-clear select_content" >
+            <li class="li_bg">全部</li>
+            <li>诚信房源</li>
+            <li>个人房源</li>
+            <li>经纪人</li>
+        </ul>
+    <ul>
+        <li class="default">默认</li>
+        <li>最新</li>
+        <li class="li_span">租金
+        <span class="span1" ss=""></span>
+        <span></span>
+        </li>
+    </ul>
+    </div>
+</div>
+<div class="search_show">
+    <ul class="show_house" id="s_house" style="display: block">
+       <!-- <li>
+            <div class="li_left">
+                <img src="img/h1.png" alt="">
+                <div class="img_right">
+                    <p class="p_1">曼哈顿 地铁口 家电齐全 三室两厅 <s></s> <s></s></p>
+                    <p>三室两厅|合租|豪华装修|15/23层</p>
+                    <p class="p_b"><b></b>曼哈顿 [金水路 燕庄 金水路未来路交汇处]</p>
+                    <p class="p_i"><i>精装修</i> <i >地铁口</i ></p>
+                </div>
+            </div>
+            <div class="li_right">
+                <i class="right_i"> <span>2800</span>/月</i>
+                <span class="time">今天</span>
+            </div>
+
+        </li>
+        <li class="li_2">
+            <div class="li_left">
+                <img src="img/h2.png" alt="">
+                <div class="img_right">
+                    <p class="p_1">曼哈顿 地铁口 家电齐全 三室两厅 <i class="per">(个人)</i></p>
+                    <p>三室两厅|合租|豪华装修|15/23层</p>
+                    <p class="p_b"><b></b>曼哈顿 [金水路 燕庄 金水路未来路交汇处]</p>
+                    <p class="p_i"><i>家电齐全</i> <i >压1付1</i ></p>
+                </div>
+            </div>
+            <div class="li_right">
+                <i class="right_i"> <span>2800</span>/月</i>
+                <span class="time">今天</span>
+            </div>
+
+        </li>
+        <li class="li_3">
+            <div class="li_left">
+                <img src="img/h3.png" alt="">
+                <div class="img_right">
+                    <p class="p_1">曼哈顿 地铁口 家电齐全 三室两厅 <i class="per">(个人)</i> <s class="p_s"></s></p>
+                    <p>三室两厅|合租|豪华装修|15/23层</p>
+                    <p class="p_b"><b></b>曼哈顿 [金水路 燕庄 金水路未来路交汇处]</p>
+                    <p class="p_i"><i>精装修</i> <i >地铁口</i ></p>
+                </div>
+            </div>
+            <div class="li_right">
+                <i class="right_i"> <span>2800</span>/月</i>
+                <span class="time">今天</span>
+            </div>
+
+        </li>
+        <li>
+            <div class="li_left">
+                <img src="img/h4.png" alt="">
+                <div class="img_right">
+                    <p class="p_1">曼哈顿 地铁口 家电齐全 三室两厅 <s></s> </p>
+                    <p>三室两厅|合租|豪华装修|15/23层</p>
+                    <p class="p_b"><b></b>曼哈顿 [金水路 燕庄 金水路未来路交汇处]</p>
+                    <p class="p_i"><i>精装修</i> <i >地铁口</i ></p>
+                </div>
+            </div>
+            <div class="li_right">
+                <i class="right_i"> <span>2800</span>/月</i>
+                <span class="time">今天</span>
+            </div>
+
+        </li>
+        <li>
+            <div class="li_left">
+                <img src="img/h5.png" alt="">
+                <div class="img_right">
+                    <p class="p_1">曼哈顿 地铁口 家电齐全 三室两厅 <i class="per">(个人)</i> <s></s></p>
+                    <p>三室两厅|合租|豪华装修|15/23层</p>
+                    <p class="p_b"><b></b>曼哈顿 [金水路 燕庄 金水路未来路交汇处]</p>
+                    <p class="p_i"><i>精装修</i> <i >地铁口</i ></p>
+                </div>
+            </div>
+            <div class="li_right">
+                <i class="right_i"> <span>2800</span>/月</i>
+                <span class="time">今天</span>
+            </div>
+
+        </li>-->
+    </ul>
+    <ul class="show_house" style="display: none">
+        <li>
+            <div class="li_left">
+                <img src="img/h1.png" alt="">
+                <div class="img_right">
+                    <p class="p_1">曼哈顿 地铁口 家电齐全 三室两厅 <s></s> <s></s></p>
+                    <p>三室两厅|合租|豪华装修|15/23层</p>
+                    <p class="p_b"><b></b>曼哈顿 [金水路 燕庄 金水路未来路交汇处]</p>
+                    <p class="p_i"><i>精装修</i> <i >地铁口</i ></p>
+                </div>
+            </div>
+            <div class="li_right">
+                <i class="right_i"> <span>2800</span>/月</i>
+                <span class="time">今天</span>
+            </div>
+
+        </li>
+        <li class="li_2">
+            <div class="li_left">
+                <img src="img/h2.png" alt="">
+                <div class="img_right">
+                    <p class="p_1">曼哈顿 地铁口 家电齐全 三室两厅 <i class="per">(个人)</i> <s class="p_s"></s></p>
+                    <p>三室两厅|合租|豪华装修|15/23层</p>
+                    <p class="p_b"><b></b>曼哈顿 [金水路 燕庄 金水路未来路交汇处]</p>
+                    <p class="p_i"><i>家电齐全</i> <i >压1付1</i ></p>
+                </div>
+            </div>
+            <div class="li_right">
+                <i class="right_i"> <span>2800</span>/月</i>
+                <span class="time">今天</span>
+            </div>
+
+        </li>
+        <li class="li_3">
+            <div class="li_left">
+                <img src="img/h3.png" alt="">
+                <div class="img_right">
+                    <p class="p_1">曼哈顿 地铁口 家电齐全 三室两厅 <i class="per">(个人)</i> <s class="p_s"></s></p>
+                    <p>三室两厅|合租|豪华装修|15/23层</p>
+                    <p class="p_b"><b></b>曼哈顿 [金水路 燕庄 金水路未来路交汇处]</p>
+                    <p class="p_i"><i>精装修</i> <i >地铁口</i ></p>
+                </div>
+            </div>
+            <div class="li_right">
+                <i class="right_i"> <span>2800</span>/月</i>
+                <span class="time">今天</span>
+            </div>
+
+        </li>
+        <li>
+            <div class="li_left">
+                <img src="img/h4.png" alt="">
+                <div class="img_right">
+                    <p class="p_1">曼哈顿 地铁口 家电齐全 三室两厅 <s></s><s class="p_s"></s> </p>
+                    <p>三室两厅|合租|豪华装修|15/23层</p>
+                    <p class="p_b"><b></b>曼哈顿 [金水路 燕庄 金水路未来路交汇处]</p>
+                    <p class="p_i"><i>精装修</i> <i >地铁口</i ></p>
+                </div>
+            </div>
+            <div class="li_right">
+                <i class="right_i"> <span>2800</span>/月</i>
+                <span class="time">今天</span>
+            </div>
+
+        </li>
+        <li>
+            <div class="li_left">
+                <img src="img/h5.png" alt="">
+                <div class="img_right">
+                    <p class="p_1">曼哈顿 地铁口 家电齐全 三室两厅 <i class="per">(个人)</i> <s class="p_s"></s></p>
+                    <p>三室两厅|合租|豪华装修|15/23层</p>
+                    <p class="p_b"><b></b>曼哈顿 [金水路 燕庄 金水路未来路交汇处]</p>
+                    <p class="p_i"><i>精装修</i> <i >地铁口</i ></p>
+                </div>
+            </div>
+            <div class="li_right">
+                <i class="right_i"> <span>2800</span>/月</i>
+                <span class="time">今天</span>
+            </div>
+
+        </li>
+    </ul>
+    <ul class="show_house" style="display: none">
+        <li>
+            <div class="li_left">
+                <img src="img/h1.png" alt="">
+                <div class="img_right">
+                    <p class="p_1">曼哈顿 地铁口 家电齐全 三室两厅 <i class="per">(个人)</i></p>
+                    <p>三室两厅|合租|豪华装修|15/23层</p>
+                    <p class="p_b"><b></b>曼哈顿 [金水路 燕庄 金水路未来路交汇处]</p>
+                    <p class="p_i"><i>精装修</i> <i >地铁口</i ></p>
+                </div>
+            </div>
+            <div class="li_right">
+                <i class="right_i"> <span>2800</span>/月</i>
+                <span class="time">今天</span>
+            </div>
+
+        </li>
+        <li class="li_2">
+            <div class="li_left">
+                <img src="img/h2.png" alt="">
+                <div class="img_right">
+                    <p class="p_1">曼哈顿 地铁口 家电齐全 三室两厅 <i class="per">(个人)</i> <s class="p_s"></s></p>
+                    <p>三室两厅|合租|豪华装修|15/23层</p>
+                    <p class="p_b"><b></b>曼哈顿 [金水路 燕庄 金水路未来路交汇处]</p>
+                    <p class="p_i"><i>家电齐全</i> <i >压1付1</i ></p>
+                </div>
+            </div>
+            <div class="li_right">
+                <i class="right_i"> <span>2800</span>/月</i>
+                <span class="time">今天</span>
+            </div>
+
+        </li>
+        <li class="li_3">
+            <div class="li_left">
+                <img src="img/h3.png" alt="">
+                <div class="img_right">
+                    <p class="p_1">曼哈顿 地铁口 家电齐全 三室两厅 <i class="per">(个人)</i> <s class="p_s"></s></p>
+                    <p>三室两厅|合租|豪华装修|15/23层</p>
+                    <p class="p_b"><b></b>曼哈顿 [金水路 燕庄 金水路未来路交汇处]</p>
+                    <p class="p_i"><i>精装修</i> <i >地铁口</i ></p>
+                </div>
+            </div>
+            <div class="li_right">
+                <i class="right_i"> <span>2800</span>/月</i>
+                <span class="time">今天</span>
+            </div>
+
+        </li>
+        <li>
+            <div class="li_left">
+                <img src="img/h4.png" alt="">
+                <div class="img_right">
+                    <p class="p_1">曼哈顿 地铁口 家电齐全 三室两厅 <i class="per">(个人)</i> </p>
+                    <p>三室两厅|合租|豪华装修|15/23层</p>
+                    <p class="p_b"><b></b>曼哈顿 [金水路 燕庄 金水路未来路交汇处]</p>
+                    <p class="p_i"><i>精装修</i> <i >地铁口</i ></p>
+                </div>
+            </div>
+            <div class="li_right">
+                <i class="right_i"> <span>2800</span>/月</i>
+                <span class="time">今天</span>
+            </div>
+
+        </li>
+        <li>
+            <div class="li_left">
+                <img src="img/h5.png" alt="">
+                <div class="img_right">
+                    <p class="p_1">曼哈顿 地铁口 家电齐全 三室两厅 <i class="per">(个人)</i> <s class="p_s"></s></p>
+                    <p>三室两厅|合租|豪华装修|15/23层</p>
+                    <p class="p_b"><b></b>曼哈顿 [金水路 燕庄 金水路未来路交汇处]</p>
+                    <p class="p_i"><i>精装修</i> <i >地铁口</i ></p>
+                </div>
+            </div>
+            <div class="li_right">
+                <i class="right_i"> <span>2800</span>/月</i>
+                <span class="time">今天</span>
+            </div>
+
+        </li>
+    </ul>
+    <ul class="show_house" style="display: none">
+        <li>
+            <div class="li_left">
+                <img src="img/h1.png" alt="">
+                <div class="img_right">
+                    <p class="p_1">曼哈顿 地铁口 家电齐全 三室两厅 <s></s> </p>
+                    <p>三室两厅|合租|豪华装修|15/23层</p>
+                    <p class="p_b"><b></b>曼哈顿 [金水路 燕庄 金水路未来路交汇处]</p>
+                    <p class="p_i"><i>精装修</i> <i >地铁口</i ></p>
+                </div>
+            </div>
+            <div class="li_right">
+                <i class="right_i"> <span>2800</span>/月</i>
+                <span class="time">今天</span>
+            </div>
+
+        </li>
+        <li class="li_2">
+            <div class="li_left">
+                <img src="img/h2.png" alt="">
+                <div class="img_right">
+                    <p class="p_1">曼哈顿 地铁口 家电齐全 三室两厅 <s></s> <s class="p_s"></s></p>
+                    <p>三室两厅|合租|豪华装修|15/23层</p>
+                    <p class="p_b"><b></b>曼哈顿 [金水路 燕庄 金水路未来路交汇处]</p>
+                    <p class="p_i"><i>家电齐全</i> <i >压1付1</i ></p>
+                </div>
+            </div>
+            <div class="li_right">
+                <i class="right_i"> <span>2800</span>/月</i>
+                <span class="time">今天</span>
+            </div>
+
+        </li>
+        <li class="li_3">
+            <div class="li_left">
+                <img src="img/h3.png" alt="">
+                <div class="img_right">
+                    <p class="p_1">曼哈顿 地铁口 家电齐全 三室两厅 <s></s></p>
+                    <p>三室两厅|合租|豪华装修|15/23层</p>
+                    <p class="p_b"><b></b>曼哈顿 [金水路 燕庄 金水路未来路交汇处]</p>
+                    <p class="p_i"><i>精装修</i> <i >地铁口</i ></p>
+                </div>
+            </div>
+            <div class="li_right">
+                <i class="right_i"> <span>2800</span>/月</i>
+                <span class="time">今天</span>
+            </div>
+
+        </li>
+        <li>
+            <div class="li_left">
+                <img src="img/h4.png" alt="">
+                <div class="img_right">
+                    <p class="p_1">曼哈顿 地铁口 家电齐全 三室两厅 <s></s><s class="p_s"></s> </p>
+                    <p>三室两厅|合租|豪华装修|15/23层</p>
+                    <p class="p_b"><b></b>曼哈顿 [金水路 燕庄 金水路未来路交汇处]</p>
+                    <p class="p_i"><i>精装修</i> <i >地铁口</i ></p>
+                </div>
+            </div>
+            <div class="li_right">
+                <i class="right_i"> <span>2800</span>/月</i>
+                <span class="time">今天</span>
+            </div>
+
+        </li>
+        <li>
+            <div class="li_left">
+                <img src="img/h5.png" alt="">
+                <div class="img_right">
+                    <p class="p_1">曼哈顿 地铁口 家电齐全 三室两厅 <s></s> <s class="p_s"></s></p>
+                    <p>三室两厅|合租|豪华装修|15/23层</p>
+                    <p class="p_b"><b></b>曼哈顿 [金水路 燕庄 金水路未来路交汇处]</p>
+                    <p class="p_i"><i>精装修</i> <i >地铁口</i ></p>
+                </div>
+            </div>
+            <div class="li_right">
+                <i class="right_i"> <span>2800</span>/月</i>
+                <span class="time">今天</span>
+            </div>
+
+        </li>
+    </ul>
+</div>
+<div class="right_foot" style="">
+    <div>
+    </div>
+</div>
+
+<div class="foot">
+    <div class="foot_bottom">
+        <div class="bottom_left">
+
+            <ul class="f-clear">
+                <li> 友情链接：</li>
+                <li><a href="">武汉租房</a></li>
+                <li><a href="">厨房电器品牌</a></li>
+                <li><a href="">房汇网</a></li>
+                <li><a href="">360搜房网</a></li>
+                <li><a href="">无锡二手车</a></li>
+                <li><a href="">合肥房产网</a></li>
+                <li><a href="">房产论坛</a></li>
+                <li><a href="">租房问答</a></li>
+                <li><a href="">郑州租房</a></li>
+                <li><a href="">郑州房价</a></li>
+                <li><a href="">好租</a></li>
+                <li><a href="">郑州租房</a></li>
+                <br>
+                <li><a href="">南山写字楼</a></li>
+                <li><a href="">罗湖写字楼</a></li>
+                <li><a href="">上海写字楼出租</a></li>
+                <li><a href="">北京写字楼出租</a></li>
+                <li><a href="">深圳写字楼出租做</a></li>
+                <li><a href="">房产季</a></li>
+                <li><a href="">好租</a></li>
+            </ul>
+            <hr class="line">
+            <div class="copy">北京易居房产经纪有限公司<i></i>网络经营许可证 京ICP备11024601号-12</div>
+            <p>©Copyright©2010-2016易居yiju.com版权所有</p>
+        </div>
+        <div class="bottom_right">
+            <img src="img/code.png" alt="">
+            <p class="sao">微信扫一扫 马上租房</p>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.8.0.js"></script>
+<script>
+    $('#zhuangxiu').mouseenter(function(){
+        $('#ul_2').show();
+    });
+    $('.zhuangxiu').mouseleave(function(){
+        $('#ul_2').hide()
+    });
+   $('#ul_2 li').mouseover(function(){
+       $(this).addClass('current-color').siblings().removeClass('current-color')
+   }).click(function(){
+     $('#zhuangxiu i').html( $(this).html())
+       $('#ul_2').hide();
+   })
+    $('#house-style').mouseenter(function(){
+        $('#ul_1').show();
+    });
+    $('.zhuangxiu').mouseleave(function(){
+        $('#ul_1').hide()
+    });
+    $('#ul_1 li').mouseover(function(){
+        $(this).addClass('current-color').siblings().removeClass('current-color')
+    }).click(function(){
+        $('#house-style i').html( $(this).html())
+        $('#ul_1').hide();
+    })
+
+
+    $('.select_content li').hover(function(){
+        $(this).addClass('li_bg').siblings().removeClass('li_bg');
+
+
+    },function(){
+    })
+    $('.select_content li').click(function(){
+        var s=$(this).index();
+        $('.search_show ul').eq(s).show().siblings().hide();
+    })
+
+    $.ajax({ type:'post',
+        url:'http://www.zhijunxing.com/yiju/loginSession.action',
+        dataType:'jsonp',
+        success:function(data){
+            console.log(data);
+            if(data.success){
+                $('.login a').eq(0).html('欢迎'+data.data[0].lname).attr('href','http://192.168.0.167/易居网初稿/收藏.html')
+                $('.login a').eq(1).html('退出').attr({onclick:'quitLogin()',href:'http://192.168.0.167/易居网初稿/首页.html'})
+            }
+
+        }
+    });
+    function quitLogin(){
+        $.ajax({
+            type:'post',
+            url:'http://www.zhijunxing.com/yiju/quitLogin.action',
+            dataType:'jsonp',
+            success:function(data){
+                console.log(data);
+                if(data.resultCode){
+                    $('.login a').eq(0).html('登录').attr('href','http://192.168.0.167/易居网初稿/登录.html')
+                    $('.login a').eq(1).html('注册').removeAttr(onclick,'quitLogin()')
+                }
+
+            }
+        })
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//搜房
+$('.select a').click(function(){
+    $(this).get(0).id='li_color'
+    $(this).parent('li').siblings().children('a').attr('id','')
+})
+
+obj={};
+    $('.select_content li').eq(0).click(function(){
+        obj.pageNo = 1;
+        Collect(obj);
+        $('.right_foot div').on('click', 'a', function () {
+            if ($(this).html() == '上一页') {
+                if (!( obj.pageNo == 1)) {
+                    obj.pageNo -= 1;
+                    Collect( obj);
+                }
+            } else if ($(this).html() == '下一页') {
+                if (!( obj.pageNo == $('.right_foot div a').last().prev().html())) {
+                    obj.pageNo += 1;
+                    Collect(obj);
+                }
+            } else {
+                obj.pageNo = parseInt($(this).html());
+                Collect(obj);
+            }
+
+        });
+    }).click()
+
+
+
+$('#region a').click(function(){
+    $(this).addClass('region')
+})
+
+$('#price a').click(function(){
+    $(this).addClass('price');
+     var str= $(this).html();
+    if(($(this).html()=='500以下')||($(this).html()=='5000以上')){
+        ss=str.substring(0,(str.length-2));
+    }else{
+        ss=str.substring(0,(str.length-1));
+    }
+   obj[this.className] = ss;
+    Collect(obj)
+});
+
+$('#shi a').click(function(){
+    $(this).addClass('shi')
+    obj[this.className] = $(this).get(0).getAttribute('ah');
+    //alert(obj.shi)
+    Collect(obj)
+});
+    $('#ul_1 a').click(function(){
+        $(this).addClass('room')
+        obj[this.className] = $(this).html();
+      alert(obj.room)
+        Collect(obj)
+    });
+
+    $('#ul_2 a').click(function(){
+        $(this).addClass('level')
+        obj[this.className] = $(this).html();
+       // alert(obj.level)
+        Collect(obj)
+    })
+
+
+
+    function Collect(obj) {
+        $.ajax({
+            type: 'post',
+            url:'http://www.zhijunxing.com/yiju/queryHousesBySql.action',
+            dataType: 'jsonp',
+            data:obj,
+            success: function (data) {
+                console.log(data.rowCount);
+                console.log(data);
+                var a;
+                if (parseInt(data.rowCount / 5) <= 5) {
+                    a = '<a>上一页</a>'
+                    for (var i = 1; i <= Math.ceil(data.rowCount / 5); i++) {
+                        if (i ==  obj.pageNo) {
+                            a += '<a href="###" class="page-checked">' + i + '</a>'
+                        } else {
+                            a += '<a href="###">' + i + '</a>'
+                        }
+                    }
+                    a+='<a>下一页</a>'
+                }else{
+                    if( obj.pageNo<=3){
+                        a = '<a>上一页</a>'
+                        for (var i = 1; i <= 4; i++) {
+                            if (i ==  obj.pageNo) {
+                                a += '<a href="###" class="page-checked">' + i + '</a>'
+                            } else {
+                                a += '<a href="###">' + i + '</a>'
+                            }
+                        }
+                        a+='<b>.....</b>'+'<a>'+Math.ceil(data.rowCount/5)+'</a>'+'<a>下一页</a>'
+                    }else{
+                        if(( obj.pageNo+2)<Math.ceil(data.rowCount/5)){
+                            a = '<a href="###">上一页</a>' +
+                                    '<a href="###">1</a>' +
+                                    '<b> ··· </b>' +
+                                    '<a href="###">' + (parseInt( obj.pageNo) - 1) + '</a>' +
+                                    '<a href="###" class="page-checked">' +  obj.pageNo + '</a>' +
+                                    '<a href="###">' + (parseInt( obj.pageNo) + 1) + '</a>' +
+                                    '<b> ··· </b>' +
+                                    '<a href="###">' + Math.ceil(data.rowCount / 5) + '</a>' +
+                                    '<a href="###">下一页</a>';
+                        }else{
+                            a = '<a href="###">上一页</a>' +
+                                    '<a href="###">1</a>'+
+                                    '<b> ··· </b>'
+                            for(i=3;i>=0;i--){
+                                if((Math.ceil(data.rowCount / 2)-i)==pageNo){
+                                    a+='<a href="###" class="page-checked">' +(Math.ceil(data.rowCount / 5)-i) + '</a>'
+                                }else{
+                                    a+='<a href="###">'+(Math.ceil(data.rowCount / 2)-i)+'</a>'
+                                }
+                            }
+                            a+='</a>'+'<a href="###">下一页</a>'
+                        }
+                    }
+                }
+                $('.right_foot div').html(a);
+                var content='';
+                for(var i in data.data){
+                    content+='<li id="'+ data.data[i].id+'"><div class="li_left"><img src="http://www.zhijunxing.com/yiju/upload/' + data.data[i].photo.split(',')[0]+'" alt="" style="width:218px;height:160px;">'+
+                            '<div class="img_right"><p class="p_1">'+data.data[i].hcondition+data.data[i].tittle+'<i class="per">'+data.data[i].type +'</i></p><p>'+data.data[i].room+'|'+data.data[i].rentway+'|'+data.data[i].hlevel+'|'+data.data[i].floor+'/'+data.data[i].countfloor+'</p><p class="p_b"><b></b>'+data.data[i].address +'</p><p class="p_i"><i>'+data.data[i].hlevel +'</i><i>'+data.data[i].hlevel +'</i></p></div></div>'
+                            +'<div class="li_right"><i class="right_i"><span>'+data.data[i].price+'</span>/月</i><span class="time">'+data.data[i].addtime+'</span></div></li>'
+                }
+                $('.search_show #s_house').html(content);
+            }
+        })
+    }
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

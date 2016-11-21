@@ -1,0 +1,183 @@
+.bg{
+    min-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    height: 645px;
+}
+img{
+    width: 100%;
+    height:645px;
+}
+.zhuce{
+    width: 1150px;
+    height: 650px;
+    position: absolute;
+    top:0;
+    left:50%;
+    margin-left: -575px;
+}
+.title{
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 16px;
+}
+.title a{
+    display: inline-block;
+    height: 50px;
+    width: 170px;
+    background: url("../img/zhuce.png") -155px -59px no-repeat
+}
+.title i{
+    display: inline-block;
+    width: 2px;
+    height: 38px;
+    background: #bbbbbb ;
+    margin: 0 20px;
+    vertical-align: 5px;
+}
+.title span{
+    display: inline-block;
+    font-size: 22px;
+    color: black;
+    vertical-align: 14px;
+}
+.content{
+    width: 510px;
+    height:466px;
+    margin: 0 auto;
+    border-radius:8px;
+    background: white;
+    text-align: center;
+    padding: 1px;
+}
+.content p{
+    margin: 15px 0;
+}
+.p_head{
+    color: black;
+    font-size: 16px;
+    margin-top: 15px;
+}
+.p_title{
+    position: relative;
+}
+.p_title b{
+    color: orangered;
+}
+.p_title span{
+    display: inline-block;
+    width: 92px;
+    font-size: 14px;
+    text-align: right;
+    margin-right: 5px;
+}
+.p_title input{
+    width: 250px;
+    height: 36px;
+    border:1px solid #cccccc;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+.p_title .border-color{
+    border-color: #70ad46;
+}
+.p_title i{
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 7px;
+    left: 406px;
+    background: url("../img/zhuce.png") -8px -115px no-repeat;
+}
+.p_title .pw1{
+    background-position: -36px -115px;
+}
+.p_title .xiaoyan{
+    width: 110px;
+    padding-left: 10px;
+}
+.p_title .bt{
+    color: white;
+    width: 102px;
+    border:none;
+    height: 38px;
+    background: #b0b0b0;
+    padding: 0;
+}
+.chang{
+    display: inline-block;
+}
+.p_foot{
+    padding-left: 104px;
+}
+.p_foot span{
+    color:#70ad46;
+    font-size: 14px;
+}
+.p_foot em{
+    display: inline-block;
+    height: 8px;
+    width: 12px;
+    border: 1px solid #d8d8d8;
+    vertical-align: -3px;
+    padding-bottom: 5px;
+    margin-right: 8px;
+}
+.p_foot .em{
+    background-color:#70ad46;
+}
+.p_foot i{
+    display: inline-block;
+    height: 13px;
+    width: 1px;
+    background: #d9d9d9;
+    vertical-align: -2px;
+    margin: 0 6px;
+}
+.p_foot a{
+    display: inline-block;
+    color:#b6b6b6;
+
+}
+.p_foot .p_login{
+    color: #70ad46;
+    font-weight: bold;
+    margin-left: 41px;
+}
+
+.p_foot .sub{
+    width: 274px;
+    height: 38px;
+    border-radius: 5px;
+    background:#70ad46;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+.hezuo{
+    color: #cccccc;
+    font-size: 14px;
+
+}
+.zhuce_foot{
+    display: inline-block;
+    margin:0 auto;
+}
+.zhuce_foot a{
+    display: inline-block;
+    width:58px;
+    height: 58px;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+.zhuce_foot .qq{
+    background: #5ec5f2 url("../img/zhuce.png") 6px -137px
+}
+.zhuce_foot .wb{
+    background: #f69a85 url("../img/zhuce.png") -41px -137px
+}
+.zhuce_foot .wx{
+    background: #7ee885 url("../img/zhuce.png") -91px -137px
+}

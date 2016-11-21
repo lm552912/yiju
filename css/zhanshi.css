@@ -1,0 +1,386 @@
+.zhanshi{
+    width:1150px;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.zhanshi_left{
+    width: 188px;
+    height:318px;
+    border:1px solid #cccccc;
+    border-radius: 3px;
+    display: inline-block;
+}
+.position{
+    position: relative;
+    left: 50%;
+}
+.zhanshi_left img{
+   width: 100%;
+    height: 100%;
+}
+.head_photo{
+    height: 80px;
+    width: 80px;
+    border-radius: 2px;
+    top: 20px;
+    margin-left: -40px;
+    background: url("../img/xiaoren.png");
+}
+.font{
+    color: black;
+    font-size: 14px;
+}
+.zhanshi_left p{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.zhanshi_left ul{
+    text-align: center;
+}
+.zhanshi_left li{
+    line-height: 40px;
+    cursor: pointer;
+}
+.current_color{
+    background: #75a749;
+    color: white;
+}
+.bianji{
+    color: black;
+}
+.zhanshi_right{
+    width: 914px;
+    float: right;
+    border:1px solid #cccccc;
+    border-radius: 3px;
+
+    padding: 0 16px;
+}
+.p_1{
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    opacity: 0.8;
+}
+.p_head{
+    margin-top:16px;
+}
+.search_nav{
+    height:38px ;
+    background: #eeeeee;
+    font-size: 14px;
+}
+.search_nav span{
+    display: inline-block;
+    line-height: 38px;
+    width:70px;
+    text-align: center;
+    position: relative;
+
+}
+.search_nav_ul{
+    height:38px ;
+    background: #eeeeee;
+    font-size: 14px;
+}
+.search_nav_ul span{
+    display: inline-block;
+    line-height: 38px;
+    width:70px;
+    text-align: center;
+    position: relative;
+
+}
+.span_bgcolor{
+    background: #cccccc;
+}
+.price i{
+    display: inline-block;
+    position: absolute;
+    height:0;
+    width: 0;
+    border-bottom: 4px solid #999999;
+    border-left: 4px solid rgba(120,120,120,0);
+    border-right: 4px solid rgba(120,120,120,0);
+    top:15px;
+    left:51px;
+}
+.price i+i{
+    border-bottom: 0px solid red;
+    border-top: 4px solid #999999;
+    top:21px;
+}
+
+.show_house li{
+    margin-top: 22px;
+    width: 887px;
+    padding-right: 20px;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 20px;
+}
+.per_edit li{
+    border-bottom: 0px solid #cccccc;
+
+}
+.per_edit li+li{
+    margin-top: 12px;
+}
+.ni{
+    color: black;
+    font-size: 14px;
+}
+.ni input{
+    height:34px;
+    width: 190px;
+    border:1px solid #cccccc;
+    border-radius: 5px;
+    padding: 0 16px;
+    margin-left: 10px;
+}
+.p_pw input{
+    height:28px;
+    width: 150px;
+    border:1px solid #cccccc;
+    border-radius: 5px;
+    padding: 0 16px;
+    margin-left: 10px;
+}
+.p_pw span{
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+}
+.per_edit button{
+    border: none;
+    font-size: 16px;
+}
+.per_edit .save{
+    background:  #75a749;
+    color: white;
+    height:38px;
+    width:130px;
+
+    border-radius: 3px;
+}
+.per_edit a{
+    display: block;
+   line-height:38px;
+    width: 106px;
+    border-radius: 3px;
+    background: #75a749;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+.li_left{
+    width: 687px;
+    display: inline-block;
+    position: relative;
+}
+.img_right{
+    float: right;
+    margin-right: 0px;
+    position: absolute;
+    top: 0px;
+    left: 286px;
+}
+
+.li_left img{
+    display: inline-block;
+}
+.img_right s{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+
+    background: url("../img/sc.png") 1px 0;
+    vertical-align: -8px;
+}
+.img_right s+s{
+    background: url("../img/sc.png") -30px 1px;
+}
+.p_1+p{
+    margin: 12px 0;
+}
+.p_b{
+    margin: 20px 0;
+}
+.p_b b{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+
+    background: url("../img/xqye/022.png") -128px -19px;
+    vertical-align: -4px;
+}
+.p_i i{
+    display: inline-block;
+    border:1px solid #ffb762;
+    line-height: 24px;
+    text-align: center;
+    width: 66px;
+    color:  #ffb762;
+    margin-right: 12px;
+}
+.p_i i+i{
+    border:1px solid #75a749;
+    color: #75a749;
+}
+.li_right{
+    float: right;
+    text-align: right;
+}
+.li_right .edit i{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background: url("../img/sc.png") -66px -1px;
+    vertical-align: -2px;
+}
+.li_right button{
+    display: inline-block;
+
+}
+.right_i{
+    display: block;
+    color: #eb5f00;
+    margin: 18px 0;
+}
+.right_i span{
+    font-size: 24px;
+}
+.time{
+    display: block;
+}
+.p_1 .per{
+    color:#ffa422;
+    font-weight: 100;
+}
+.li_2 .p_i i{
+     width:70px;
+     color: #88b9b9;
+     border: 1px solid #88b9b9;
+ }
+.li_2 .p_i i+i{
+    color: #de958f;
+    border: 1px solid #de958f;
+}
+.right_foot{
+    height:100px;
+    padding: 1px;
+}
+.right_foot>div{
+    width:600px;
+    height: 30px;
+    margin:  0 auto;
+    margin-top: 30px;
+    text-align: center;
+}
+.right_foot a{
+    display: inline-block;
+    line-height: 32px;
+    width: 46px;
+    text-align: center;
+    border:1px solid #cccccc;
+}
+.right_foot .page-checked{
+    background: red;
+}
+.right_foot .a_last{
+    width:56px;
+}
+.touxiang{
+    position: relative;
+}
+#box img{
+    width: 180px;
+    height:180px;
+}
+.bt{
+    width:155px;
+    background: #75a749;
+    border-radius: 5px;
+    color:white;
+    height: 30px;
+}
+#uploadPhoto{
+    width: 155px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+#mask {
+    background-color: #0B1013;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    display: none;}
+.popupBox {
+    display: none;
+    padding-top: 55px;
+    width: 298px;
+    height: 124px;
+    background-color: #fff;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    margin-top: -62px;
+    margin-left: -149px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 999;
+}
+.ok {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url("http://192.168.0.174/img/ok.png") no-repeat red;
+    position: relative;
+    top: 4px;
+    left: 68px;
+}
+.popupBox span {
+    font-size: 19px;
+    margin-left: 73px;
+}
+.popupBox a {
+    display: inline-block;
+    margin-top: 30px;
+    color: red;
+    position: absolute;
+    width: 80px;
+    line-height: 30px;
+    text-align: center;
+
+}
+.popupBox .sure{
+    top: 86px;
+    left: 60px;
+    background: #75a749;
+}
+.popupBox .cancle{
+    top: 86px;
+    left: 160px;
+    background: #999999;
+}
+.close {
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+    background: url("http://192.168.0.174/img/no.png") red;
+    display: inline-block;
+    position: relative;
+    top: -50px;
+    left: 49px
+
+}

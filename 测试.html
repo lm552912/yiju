@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ddd</title>
+    <style type="text/css">
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: #597e38;
+            border: 2px solid #eb5f00;
+        }
+    </style>
+</head>
+<body>
+<div id="dv" style="padding: 50px;background-color: #5ec5f2">
+    <div id="box" style="position: fixed;left: 300px;top: 400px;"></div>
+</div>
+<script type="text/javascript" src="js/jquery-1.8.0.js"></script>
+<script type="text/javascript" >
+$('#box').mouseout(function(){
+    console.log(11);
+});
+
+$('#dv').mouseout(function(){
+    console.log(22);
+})
+
+</script>
+
+</body>
+</html>

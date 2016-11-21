@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>fabu</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/foot.css">
+    <link rel="stylesheet" href="css/fabuhouse.css">
+</head>
+<body>
+<div class="nav">
+    <div class="nav_head">
+        <a href="http://192.168.0.167/易居网初稿/首页.html" id="logo"></a>
+        <div class="nav_search">
+            <span>郑州</span>
+            <i class="xl"></i>
+            <i class="fg"></i>
+            <input type="text">
+            <button class="sousuo">
+                <b></b>
+                <i>搜房源</i>
+            </button>
+        </div>
+        <div class="nav_login">
+            <a href="http://192.168.0.167/易居网初稿/登录.html">登录</a>
+            <i></i>
+            <a href="http://192.168.0.167/易居网初稿/注册.html">注册</a>
+        </div>
+    </div>
+</div>
+<div class="center">
+    <h1 class="h1_title">免费发布房源</h1>
+    <div class="content">
+        <p class="p_title">类别和身份</p>
+        <div class="div_rent">
+            <p class="infor_p"><span>*</span>&nbsp;出租方式:</p>
+            <p class="p_content p_content_1">
+                <b><i class="li_color" ><span class="rentway" aa="整租"></span></i> 整套出租</b>
+                <b><i ><span aa="单间出租"></span ></i> 单间出租</b>
+                <b><i ><span aa="床位出租"></span></i> 床位出租</b>
+            </p>
+        </div>
+        <div class="div_rent">
+            <p class="infor_p"><span>*</span>&nbsp;身份:</p>
+            <p class="p_content p_content_2">
+                <b><i class="i_bg"><span class="type"></span></i> 个人</b>
+                <b><i><span ></span></i> 经纪人</b>
+
+            </p>
+        </div>
+    </div>
+    <form id="form1">
+    <div class="content">
+        <p class="p_title">基础信息</p>
+        <div class="div_rent">
+            <p class="infor_p"><span>*</span>&nbsp;小区名称:</p>
+            <p class="p_content">
+                <input  class="xiaoquname" type="text" placeholder=" 请 输 入 小 区 名 称" name="villageName">
+            </p>
+        </div>
+        <div class="div_rent">
+            <p class="infor_p"><span>*</span>&nbsp;房屋户型:</p>
+            <p class="p_content huxing">
+                <div class="huxing_style"><input type="text" name="shi">室</div>
+                <div class="huxing_style"><input type="text" name="ting">厅</div>
+                <div class="huxing_style"><input type="text" name="wei">卫</div>
+                <div class="huxing_style"><input type="text" name="area">m<sup>2</sup></div>
+            </p>
+        </div>
+        <div class="div_rent">
+            <p class="infor_p"><span>*</span>&nbsp;楼层:</p>
+            <p class="p_content huxing">
+            <div class="huxing_style floor">第<input type="text" name="floor">层</div>
+            <div class="huxing_style floor ">共<input type="text" name="countfloor">层</div>
+
+            </p>
+        </div>
+        <div class="div_rent">
+            <p class="infor_p"><span>*</span>&nbsp;朝向装修:</p>
+            <p class="p_content huxing">
+            <div class="huxing_style  zhuangxiu1">
+            <input type="text" value="南" name="direction">
+            <i class="jiao "></i>
+            <ul style="display: none">
+              <li class="li_bg">南</li>
+              <li>西</li>
+              <li>北</li>
+              <li>东</li>
+
+           </ul>
+            </div>
+            <div class="huxing_style zhuangxiu2">
+                <input type="text" value="精装修" name="level">
+                <i class="jiao"></i>
+                <ul style="display: none">
+                    <li class="li_bg">精装修</li>
+                    <li>中装修</li>
+                    <li>简装修</li>
+                    <li>毛坯</li>
+                </ul>
+            </div>
+            </p>
+        </div>
+        <div class="div_rent">
+            <p class="infor_p"><span>*</span>&nbsp;租金:</p>
+            <p class="p_content huxing">
+            <div class="huxing_style  rent_money">面议<input type="text" name="price">元 / 月</div>
+            <div class="huxing_style rent_money ">
+                <input type="text" value="押一付三" name="paymethod">
+                <i class="jiao"></i>
+                <ul style="display: none">
+                    <li class="li_bg">押一付三</li>
+                    <li>押一付三</li>
+                    <li>押一付一</li>
+                    <li>押一付二</li>
+                    <li>押三付二</li>
+                    <li>押二付二</li>
+                </ul>
+            </div>
+
+            </p>
+        </div>
+    </div>
+    <div class="content">
+        <p class="p_title">详细信息</p>
+        <div class="div_rent">
+            <p class="infor_p"><span>*</span>&nbsp;标题:</p>
+            <p class="p_content">
+                <input  class="xiaoquname shuru" type="text" name="tittle" placeholder=" 8-30个字符，不允许出现特殊字符">
+            </p>
+        </div>
+        <div class="div_rent">
+            <p class="infor_p position"><span>*</span>&nbsp;房源配置:</p>
+            <div class="house">
+                 <ul class="f-clear">
+                     <li >床</li>
+                     <li>书桌</li>
+                     <li>电视</li>
+                     <li>冰箱</li>
+                     <li>空调</li>
+                     <li>宽带</li>
+                     <li>微波炉</li>
+                     <li>热水器</li>
+                     <li>暖气</li>
+                     <li>沙发</li>
+                     <li>衣柜</li>
+                     <li>洗衣机</li>
+                     <li>电磁炉</li>
+
+                 </ul>
+            </div>
+        </div>
+        <div class="div_rent">
+            <p class="infor_p"><span>*</span>&nbsp;特色:</p>
+            <p class="p_content huxing">
+                <input  class="xiaoquname shuru" type="text" name="features" placeholder=" 请输入4个关键词，不同关键词用空格隔开">
+            </p>
+        </div>
+        <div class="div_rent">
+            <p class="infor_p"><span>*</span>&nbsp;地址:</p>
+            <p class="p_content huxing">
+                <input  class="xiaoquname shuru" type="text" name="address" placeholder=" 请输入正确的地址">
+            </p>
+        </div>
+        <div class="div_rent">
+            <p class="infor_p"></p>
+            <p class="p_content huxing" id="p_img">
+                <button class="picture">上传图片</button> <input type="file" id="file1"name="file">
+            <p>
+            <div class="box_img"></div>
+                <p id="p"> 只能上传房屋图片，不能包含文字,数字,网址,名片等,最多上传24张，每张最大10M</p>
+
+        </div>
+    </div>
+    <div class="content">
+        <p class="p_title">其他信息</p>
+        <div class="div_rent">
+            <p class="infor_p"><span>*</span>&nbsp;联系人:</p>
+            <p class="p_content">
+                <input  class="xiaoquname tl1" type="text" name="linkman" placeholder=" 请 填写联系人">
+            </p>
+        </div>
+        </div>
+        <div class="div_rent">
+            <p class="infor_p"><span>*</span>&nbsp;联系电话:</p>
+            <p class="p_content">
+                <input  class="xiaoquname tl2" type="text" name="linkphone" placeholder=" 请 正确填写联系方式">
+            </p>
+        </div>
+    </form>
+    <button class="pub">发 布</button>
+    </div>
+</div>
+<div class="foot">
+    <div class="foot_bottom">
+        <div class="bottom_left">
+
+            <ul class="f-clear">
+                <li> 友情链接：</li>
+                <li><a href="">武汉租房</a></li>
+                <li><a href="">厨房电器品牌</a></li>
+                <li><a href="">房汇网</a></li>
+                <li><a href="">360搜房网</a></li>
+                <li><a href="">无锡二手车</a></li>
+                <li><a href="">合肥房产网</a></li>
+                <li><a href="">房产论坛</a></li>
+                <li><a href="">租房问答</a></li>
+                <li><a href="">郑州租房</a></li>
+                <li><a href="">郑州房价</a></li>
+                <li><a href="">好租</a></li>
+                <li><a href="">郑州租房</a></li>
+                <br>
+                <li><a href="">南山写字楼</a></li>
+                <li><a href="">罗湖写字楼</a></li>
+                <li><a href="">上海写字楼出租</a></li>
+                <li><a href="">北京写字楼出租</a></li>
+                <li><a href="">深圳写字楼出租做</a></li>
+                <li><a href="">房产季</a></li>
+                <li><a href="">好租</a></li>
+            </ul>
+            <hr class="line">
+            <div class="copy">北京易居房产经纪有限公司<i></i>网络经营许可证 京ICP备11024601号-12</div>
+            <p>©Copyright©2010-2016易居yiju.com版权所有</p>
+        </div>
+        <div class="bottom_right">
+            <img src="img/code.png" alt="">
+            <p class="sao">微信扫一扫 马上租房</p>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.8.0.js"></script>
+<script src="js/ajaxfileupload1.js"> </script>
+<script>
+    //获取登陆者信息
+    $.ajax({ type:'post',
+        url:'http://www.zhijunxing.com/yiju/loginSession.action',
+        dataType:'jsonp',
+        success:function(data){
+            console.log(data);
+            if(data.success){
+                $('.nav_login a').eq(0).html('欢迎'+data.data[0].lname).attr('href','http://192.168.0.167/易居网初稿/收藏.html')
+                $('.nav_login a').eq(1).html('退出').attr({onclick:'quitLogin()',href:'http://192.168.0.167/易居网初稿/首页.html'})
+            }
+
+        }
+    });
+    function quitLogin(){
+        $.ajax({
+            type:'post',
+            url:'http://www.zhijunxing.com/yiju/quitLogin.action',
+            dataType:'jsonp',
+            success:function(data){
+                console.log(data);
+                if(data.resultCode){
+                    $('.nav_login a').eq(0).html('登录').attr('href','http://192.168.0.167/易居网初稿/登录.html')
+                    $('.nav_login a').eq(1).html('注册').removeAttr(onclick,'quitLogin()')
+                }
+
+            }
+        })
+    }
+
+
+
+/*
+    $('input').focus(function(){
+        $(this).css({borderColor:' #75a749'})
+    })*/
+    var obj={furniture:'',rentway:'整租',type:'个人'};
+
+
+    $('.p_content_1 b').click(function(){
+        $(this).children("i").children('span').addClass('rentway');
+        $(this).siblings().children('i').children('span').removeClass('rentway');
+        x=$(this).children("i").children('span').get(0).className;
+        y=$(this).children("i").children('span').get(0).getAttribute('aa');
+        obj[x]=y;
+
+    });
+    $('.p_content_2 b').click(function(){
+        $(this).children("i").children('span').addClass('type');
+        $(this).siblings().children('i').children('span').removeClass('type');
+        x=$(this).children("i").children('span').get(0).className;
+        y=$(this).text();
+        obj[x]=y;
+    });
+
+
+  $('input[name=villageName]').blur(function(){
+      obj.villageName=$(this).val();
+      //console.log(obj.villageName);
+  });
+    $('input[name=shi]').blur(function(){
+        obj.shi=$(this).val();
+     // console.log(obj.shi);
+    });
+    $('input[name=ting]').blur(function(){
+        obj.ting=$(this).val();
+      //  console.log(obj.ting);
+    })
+    $('input[name=wei]').blur(function(){
+        obj.wei=$(this).val();
+        //  console.log(obj.ting);
+    });
+    $('input[name=area]').blur(function(){
+        obj.area=$(this).val();
+        //  console.log(obj.ting);
+    });
+    $('input[name=floor]').blur(function(){
+        obj.floor=$(this).val();
+        //  console.log(obj.ting);
+    });
+    $('input[name=countfloor]').blur(function(){
+        obj.countfloor=$(this).val();
+        //  console.log(obj.ting);
+    });
+    $('input[name=direction]').blur(function(){
+        obj.direction=$(this).val();
+        //  console.log(obj.ting);
+    })
+    $('input[name=level]').blur(function(){
+        obj.level=$(this).val();
+        //  console.log(obj.ting);
+    });
+    $('input[name=price]').blur(function(){
+        obj.price=$(this).val();
+        //  console.log(obj.ting);
+    });
+    $('input[name=paymethod]').blur(function(){
+        obj.paymethod=$(this).val();
+        //  console.log(obj.ting);
+    });
+    $('input[name=tittle]').blur(function(){
+        obj.tittle=$(this).val();
+        // console.log(obj.tittle);
+    });
+
+$('.house li').click(function(){
+    if(!(this.className=='bg_tu')){
+        obj.furniture+=$(this).html()
+        $(this).attr('class','bg_tu')
+    }else{
+       length=$(this).html().length;
+       str= $(this).html()
+       num= obj.furniture.indexOf($(this).html());
+       tt=obj.furniture.substring(num,parseInt(num+length));
+        obj.furniture = obj.furniture.replace(tt,' ');
+        $(this).attr('class',' ')
+    }
+    console.log(obj.furniture);
+});
+  $('input[name=features]').blur(function(){
+        obj.features=$(this).val();
+    });
+
+    $('input[name=address]').blur(function(){
+        obj.address=$(this).val();
+    });
+    $('input[name=linkman]').blur(function(){
+        obj.linkman=$(this).val();
+    });
+
+    $('input[name=linkphone]').blur(function(){
+        obj.linkphone=$(this).val();
+
+    });
+    console.log(obj);
+    //上传图片的方法
+    var fileIds = [], num = 1;
+    $('#p_img').on('change', 'input[type=file]', function () {
+        var reader = new FileReader(), val = $(this).get(0).files[0];
+        reader.readAsDataURL(val);
+        //console.log(typeof reader);
+        reader.onload = function () {
+            fileIds.push('file' + num);
+           $('#' + fileIds[num - 1]).hide();
+            num += 1;
+            $('.box_img').append('<img src="' + reader.result + '"/>');
+            $('#p_img').append('<input type="file" name="file" id="file' + num + '">');
+        }
+    });
+
+
+    $('button.pub').click(function () {
+        $.ajaxFileUpload({
+            type: 'post',
+            url: 'http://www.zhijunxing.com/yiju/addHouses.action',
+            secureuri: false,
+            fileElementId: fileIds,
+          // data:$('#form1').serialize()+$.param(obj),
+            data:obj,
+            async: true,
+            cache: true,
+            dataType: 'json',
+            contentType: 'application/x-www-form-urlencoded;charset=UTF-8',
+            success: function (data) {
+                console.log(data);
+            }
+        })
+    });
+
+
+
+
+
+
+/*    $('button.pub').click(function(){
+        addHouses(obj)
+    })
+    function addHouses(object){
+        $.ajax({
+            type:'post',
+            url:'http://www.zhijunxing.com/yiju/addHouses.action',
+            dataType:'jsonp',
+            data:object,
+            success:function(data){
+                if(data.resultCode=='0000'){
+                    alert('发布成功')
+                }
+            }
+        })
+    }*/
+
+//序列化之后的发布-----------------------------------------
+
+
+
+/*
+    $('button.pub').click(function(){
+        addHouses(obj)
+    })
+    function addHouses(object){
+        $.ajax({
+            type:'post',
+            url:'http://www.zhijunxing.com/yiju/addHouses.action',
+            dataType:'jsonp',
+            data:$('#form1').serialize()+$.param(object),
+            success:function(data){
+                if(data.resultCode=='0000'){
+                    console.log(data)
+                    alert('发布成功')
+                }
+            }
+        })
+    }
+*/
+
+    $('.huxing_style').hover(function(){
+        $(this).children('ul').show()
+        $(this).children('i').addClass('jiao1')
+    },function(){
+        $(this).children('ul').hide()
+        $(this).children('i').removeClass('jiao1')
+    })
+    $('.huxing_style li').hover(function(){
+        $(this).addClass('li_bg').siblings().removeClass('li_bg')
+    });
+$('.huxing_style li').click(function(){
+    $(this).parent('ul').siblings('input').get(0).value=$(this).get(0).innerHTML;
+    $(this).parent('ul').hide();
+    });
+/*$('.house li').click(function(){
+    $(this).toggleClass('bg_tu')
+})*/
+
+
+
+
+    $.ajax({
+        type:'post',
+        url:'http://www.zhijunxing.com/yiju/queryHousesBylid.action',
+        dataType:'jsonp',
+        data:{
+            pageNo:'1'
+        },
+        success:function(data){
+            if(data.success){
+               console.log(data)
+            }
+        }
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
